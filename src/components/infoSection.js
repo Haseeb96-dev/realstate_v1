@@ -24,6 +24,13 @@ align-items: flex-start;
 padding: 1rem, 2rem;
 line-height: 1.4;
 order: ${({reverse}) => (reverse ? '2' : '1')};
+h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 6vw, 2rem);
+}
+p{
+  margin-top: 2rem;
+}
 `
 const ColumnRigth = styled.div`
 padding: 1rem, 2rem;
@@ -34,6 +41,17 @@ align-items: center;
   @media screen and (max-width: 769px) {
     order: ${({reverse}) => (reverse ? '2' : '1')};
   }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  @media screen and   (max-width: 768px) {
+    width: 90%;
+    height: 90%;
+  }
+
+
 `
 
 
